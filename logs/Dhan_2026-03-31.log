@@ -1,0 +1,449 @@
+2026-03-31 19:51:53,144 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 19:51:53,461 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 19:52:34,282 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 19:52:34,597 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 19:53:57,058 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 19:53:57,426 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 19:54:17,065 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-03-31 19:54:17,850 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 19:54:34,998 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low     close       volume          vwap
+45 2026-03-30 14:15:00+05:30  22420.20  22431.85  22375.80  22378.05   20087905.0  22534.345879
+46 2026-03-30 14:30:00+05:30  22376.55  22410.60  22350.65  22366.80   29129397.0  22527.771524
+47 2026-03-30 14:45:00+05:30  22365.60  22383.40  22337.80  22349.95   26230857.0  22518.038689
+48 2026-03-30 15:00:00+05:30  22348.50  22348.50  22283.85  22335.60  114532149.0  22509.248694
+49 2026-03-30 15:15:00+05:30  22335.45  22391.00  22325.15  22379.20   96330840.0  22473.327107
+2026-03-31 19:55:14,431 | __main__ | INFO | Condition is notrade
+2026-03-31 20:02:22,034 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 20:02:22,421 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 20:02:26,008 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-03-31 20:02:26,699 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 20:02:26,888 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low     close       volume          vwap
+45 2026-03-30 14:15:00+05:30  22420.20  22431.85  22375.80  22378.05   20087905.0  22534.345879
+46 2026-03-30 14:30:00+05:30  22376.55  22410.60  22350.65  22366.80   29129397.0  22527.771524
+47 2026-03-30 14:45:00+05:30  22365.60  22383.40  22337.80  22349.95   26230857.0  22518.038689
+48 2026-03-30 15:00:00+05:30  22348.50  22348.50  22283.85  22335.60  114532149.0  22509.248694
+49 2026-03-30 15:15:00+05:30  22335.45  22391.00  22325.15  22379.20   96330840.0  22473.327107
+2026-03-31 20:02:30,213 | __main__ | INFO | Condition is notrade
+2026-03-31 20:02:50,307 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 20:02:50,612 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 20:02:57,425 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-03-31 20:02:58,126 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 20:03:05,131 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low     close       volume          vwap
+45 2026-03-30 14:15:00+05:30  22420.20  22431.85  22375.80  22378.05   20087905.0  22534.345879
+46 2026-03-30 14:30:00+05:30  22376.55  22410.60  22350.65  22366.80   29129397.0  22527.771524
+47 2026-03-30 14:45:00+05:30  22365.60  22383.40  22337.80  22349.95   26230857.0  22518.038689
+48 2026-03-30 15:00:00+05:30  22348.50  22348.50  22283.85  22335.60  114532149.0  22509.248694
+49 2026-03-30 15:15:00+05:30  22335.45  22391.00  22325.15  22379.20   96330840.0  22473.327107
+2026-03-31 20:07:13,288 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 20:07:13,607 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 20:07:21,397 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-03-31 20:07:22,190 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 20:07:30,341 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low     close       volume          vwap
+45 2026-03-30 14:15:00+05:30  22420.20  22431.85  22375.80  22378.05   20087905.0  22534.345879
+46 2026-03-30 14:30:00+05:30  22376.55  22410.60  22350.65  22366.80   29129397.0  22527.771524
+47 2026-03-30 14:45:00+05:30  22365.60  22383.40  22337.80  22349.95   26230857.0  22518.038689
+48 2026-03-30 15:00:00+05:30  22348.50  22348.50  22283.85  22335.60  114532149.0  22509.248694
+49 2026-03-30 15:15:00+05:30  22335.45  22391.00  22325.15  22379.20   96330840.0  22473.327107
+2026-03-31 20:09:10,305 | __main__ | INFO | Condition is buy
+2026-03-31 20:09:58,609 | __main__ | INFO | Placing sell order for PE i.e. upside view 
+2026-03-31 20:10:01,166 | urllib3.connectionpool | DEBUG | Resetting dropped connection: api.dhan.co
+2026-03-31 20:10:01,911 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 20:10:26,769 | __main__ | INFO | Placing sell order for PE NIFTY-Apr2026-21800-PE at strike 21800
+2026-03-31 20:10:37,771 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:17:22,892 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 20:17:23,260 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 20:17:42,067 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-03-31 20:17:46,138 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 20:17:46,330 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low     close       volume          vwap
+45 2026-03-30 14:15:00+05:30  22420.20  22431.85  22375.80  22378.05   20087905.0  22534.345879
+46 2026-03-30 14:30:00+05:30  22376.55  22410.60  22350.65  22366.80   29129397.0  22527.771524
+47 2026-03-30 14:45:00+05:30  22365.60  22383.40  22337.80  22349.95   26230857.0  22518.038689
+48 2026-03-30 15:00:00+05:30  22348.50  22348.50  22283.85  22335.60  114532149.0  22509.248694
+49 2026-03-30 15:15:00+05:30  22335.45  22391.00  22325.15  22379.20   96330840.0  22473.327107
+2026-03-31 20:18:14,296 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 20:18:14,344 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 20:18:14,381 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-03-31 20:18:15,060 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 20:18:15,086 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low     close       volume          vwap
+45 2026-03-30 14:15:00+05:30  22420.20  22431.85  22375.80  22378.05   20087905.0  22534.345879
+46 2026-03-30 14:30:00+05:30  22376.55  22410.60  22350.65  22366.80   29129397.0  22527.771524
+47 2026-03-30 14:45:00+05:30  22365.60  22383.40  22337.80  22349.95   26230857.0  22518.038689
+48 2026-03-30 15:00:00+05:30  22348.50  22348.50  22283.85  22335.60  114532149.0  22509.248694
+49 2026-03-30 15:15:00+05:30  22335.45  22391.00  22325.15  22379.20   96330840.0  22473.327107
+2026-03-31 20:18:15,087 | __main__ | INFO | Condition is notrade
+2026-03-31 20:20:12,873 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-31 20:20:13,170 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+169880     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3346.85        2170.85         NaN
+169881     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169882     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3296.90        2120.90         NaN
+169883     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+169884     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3247.00        2071.00         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+192044     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192045     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        5793.50        4617.30         NaN
+192046     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+192047     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        5743.60        4567.40         NaN
+192048     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-03-31 20:20:30,113 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-03-31 20:20:30,798 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 20:20:36,994 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low     close       volume          vwap
+45 2026-03-30 14:15:00+05:30  22420.20  22431.85  22375.80  22378.05   20087905.0  22534.345879
+46 2026-03-30 14:30:00+05:30  22376.55  22410.60  22350.65  22366.80   29129397.0  22527.771524
+47 2026-03-30 14:45:00+05:30  22365.60  22383.40  22337.80  22349.95   26230857.0  22518.038689
+48 2026-03-30 15:00:00+05:30  22348.50  22348.50  22283.85  22335.60  114532149.0  22509.248694
+49 2026-03-30 15:15:00+05:30  22335.45  22391.00  22325.15  22379.20   96330840.0  22473.327107
+2026-03-31 20:20:50,391 | __main__ | INFO | Condition is buy
+2026-03-31 20:20:50,392 | __main__ | INFO | Placing sell order for PE i.e. upside view 
+2026-03-31 20:20:50,453 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-31 20:20:50,465 | __main__ | INFO | Placing sell order for PE NIFTY-Apr2026-21800-PE at strike 21800
+2026-03-31 20:20:50,505 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:50,564 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/orders HTTP/1.1" 400 None
+2026-03-31 20:20:50,565 | brokerClass | INFO | Order placed for 40693 SELL 65 LIMIT limitPrice 167.0 triggerPrice 0 
+ {'status': 'failure', 'remarks': {'error_code': 'DH-905', 'error_type': 'Input_Exception', 'error_message': 'Invalid IP'}, 'data': ''}
+2026-03-31 20:20:50,566 | __main__ | INFO | Placed sell order for PE NIFTY-Apr2026-21800-PE with order id None
+2026-03-31 20:20:50,567 | brokerClass | INFO | Order None not found in order pool  : dict_keys([])
+2026-03-31 20:20:51,616 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "GET /v2/orders/None HTTP/1.1" 200 None
+2026-03-31 20:20:51,618 | brokerClass | ERROR | Error in getting orderInfo for None
+Traceback (most recent call last):
+  File "D:\dhan_vwap\brokerClass.py", line 279, in getOrderByID
+    return orderRes['data'][0]
+           ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-31 20:20:51,625 | __main__ | INFO | Order Status None
+2026-03-31 20:20:51,625 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 131, in orderforcond1
+    if orderInfo['orderStatus'] == 'TRADED':
+       ~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-03-31 20:20:52,637 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:20:52,682 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:52,683 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:20:53,685 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:20:53,725 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:53,726 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:20:54,728 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:20:54,766 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:54,767 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:20:55,771 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:20:55,809 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:55,810 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:20:56,812 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:20:56,854 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:56,856 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:20:57,858 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:20:57,896 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:57,898 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:20:58,900 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:20:58,940 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:58,941 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:20:59,945 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:20:59,983 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:20:59,984 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:00,986 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:01,026 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:01,027 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:02,029 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:02,068 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:02,069 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:03,071 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:03,111 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:03,112 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:04,114 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:04,153 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:04,155 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:05,157 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:05,198 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:05,199 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:06,202 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:06,244 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:06,245 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:07,247 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:07,286 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:07,288 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:08,290 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:08,329 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:08,331 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:09,333 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:09,373 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:09,374 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:10,376 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:10,413 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:10,415 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:11,417 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:11,457 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:11,458 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:12,460 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:12,504 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:12,505 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:13,507 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:13,546 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:13,548 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:14,550 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:14,601 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:14,602 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:15,604 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:15,643 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:15,644 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:16,646 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:16,687 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:16,688 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:17,690 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:17,742 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:17,743 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:18,745 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:18,786 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:18,788 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'
+2026-03-31 20:21:19,790 | __main__ | INFO | Checking for SL and target
+2026-03-31 20:21:19,832 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 872
+2026-03-31 20:21:19,833 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 156, in orderforcond1
+    if ltp >= positionConfig['SL']:
+              ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'SL'

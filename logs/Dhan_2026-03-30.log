@@ -1,0 +1,57 @@
+2026-03-30 13:51:23,121 | utility | DEBUG | Expiry List  [datetime.date(2026, 3, 30), datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-03-30 13:51:23,383 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+157564     NSE       D        35060  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+157565     NSE       D        35061  NaN     OPTIDX  ...                           0.0          0.0        9004.80        7818.70         NaN
+157566     NSE       D        35062  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+157567     NSE       D        35063  NaN     OPTIDX  ...                           0.0          0.0        9054.75        7868.65         NaN
+157568     NSE       D        35064  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+187855     NSE       D        65765  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+187856     NSE       D        65766  NaN     OPTIDX  ...                           0.0          0.0        5766.20        4580.10         NaN
+187857     NSE       D        65767  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+187858     NSE       D        65768  NaN     OPTIDX  ...                           0.0          0.0        5716.20        4530.10         NaN
+187869     NSE       D        65779  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[614 rows x 32 columns]
+2026-03-30 13:51:23,423 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-03-30 13:51:24,239 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-30 13:51:24,339 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low     close      volume          vwap
+38 2026-03-30 12:30:00+05:30  22519.85  22579.30  22508.00  22557.05  15117105.0  22553.248251
+39 2026-03-30 12:45:00+05:30  22557.35  22560.70  22484.05  22505.80  12956507.0  22553.000173
+40 2026-03-30 13:00:00+05:30  22506.10  22511.40  22481.45  22499.20  12630927.0  22551.561918
+41 2026-03-30 13:15:00+05:30  22498.55  22516.35  22456.55  22476.45  14816126.0  22549.537773
+42 2026-03-30 13:30:00+05:30  22476.20  22502.10  22454.85  22462.05  14977314.0  22546.750779
+2026-03-30 13:51:24,340 | __main__ | INFO | Condition is notrade
+2026-03-30 13:51:41,144 | __main__ | INFO | Placing sell order for pe ce both  a straddle 
+2026-03-30 13:52:00,823 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-03-30 13:52:13,395 | __main__ | INFO | Strike selected  22450
+2026-03-30 13:52:40,550 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 929
+2026-03-30 13:53:06,652 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/orders HTTP/1.1" 200 None
+2026-03-30 13:53:07,514 | brokerClass | INFO | Order placed for 62922 BUY 65 LIMIT limitPrice 1.05 triggerPrice 0 
+ {'status': 'success', 'remarks': '', 'data': {'orderId': '222260330925816', 'orderStatus': 'TRANSIT'}}
+2026-03-30 13:53:16,797 | __main__ | INFO | Order placed with order id  222260330925816  with strike 22450 in ce
+2026-03-30 13:53:22,054 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 928
+2026-03-30 13:53:31,479 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/orders HTTP/1.1" 200 None
+2026-03-30 13:53:32,531 | brokerClass | INFO | Order placed for 54456 BUY 65 LIMIT limitPrice 0.6 triggerPrice 0 
+ {'status': 'success', 'remarks': '', 'data': {'orderId': '352260330822616', 'orderStatus': 'TRANSIT'}}
+2026-03-30 13:53:36,797 | __main__ | INFO | Order placed with order id 352260330822616  with strike 22450 in pe 
+2026-03-30 13:53:43,736 | brokerClass | INFO | Order 222260330925816 not found in order pool  : dict_keys([])
+2026-03-30 13:53:48,295 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "GET /v2/orders/222260330925816 HTTP/1.1" 200 None
+2026-03-30 13:53:55,308 | brokerClass | INFO | Order 352260330822616 not found in order pool  : dict_keys([])
+2026-03-30 13:53:58,723 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "GET /v2/orders/352260330822616 HTTP/1.1" 200 None
+2026-03-30 13:54:01,498 | __main__ | INFO | Order Status for CE {'dhanClientId': '1100265717', 'orderId': '222260330925816', 'exchangeOrderId': '1500000259718502', 'correlationId': 'DFT', 'orderStatus': 'TRADED', 'transactionType': 'BUY', 'exchangeSegment': 'NSE_FNO', 'productType': 'INTRADAY', 'orderType': 'LIMIT', 'validity': 'DAY', 'tradingSymbol': 'NIFTY-Mar2026-23000-CE', 'securityId': '62922', 'quantity': 65, 'disclosedQuantity': 0, 'price': 1.05, 'triggerPrice': 0.0, 'afterMarketOrder': False, 'boProfitValue': 0.0, 'boStopLossValue': 0.0, 'legName': 'NA', 'createTime': '2026-03-30 13:53:07', 'updateTime': '2026-03-30 13:53:07', 'exchangeTime': '2026-03-30 13:53:07', 'drvExpiryDate': '2026-03-30', 'drvOptionType': 'CALL', 'drvStrikePrice': 23000.0, 'omsErrorCode': '0', 'omsErrorDescription': 'TRADE CONFIRMED', 'algoId': '0', 'remainingQuantity': 0, 'averageTradedPrice': 1.0, 'filledQty': 65} 
+2026-03-30 13:54:02,664 | __main__ | INFO | Order Status for PE {'dhanClientId': '1100265717', 'orderId': '352260330822616', 'exchangeOrderId': '1400000254423029', 'correlationId': 'DFT', 'orderStatus': 'TRADED', 'transactionType': 'BUY', 'exchangeSegment': 'NSE_FNO', 'productType': 'INTRADAY', 'orderType': 'LIMIT', 'validity': 'DAY', 'tradingSymbol': 'NIFTY-Mar2026-21900-PE', 'securityId': '54456', 'quantity': 65, 'disclosedQuantity': 0, 'price': 0.6, 'triggerPrice': 0.0, 'afterMarketOrder': False, 'boProfitValue': 0.0, 'boStopLossValue': 0.0, 'legName': 'NA', 'createTime': '2026-03-30 13:53:31', 'updateTime': '2026-03-30 13:53:31', 'exchangeTime': '2026-03-30 13:53:31', 'drvExpiryDate': '2026-03-30', 'drvOptionType': 'PUT', 'drvStrikePrice': 21900.0, 'omsErrorCode': '0', 'omsErrorDescription': 'TRADE CONFIRMED', 'algoId': '0', 'remainingQuantity': 0, 'averageTradedPrice': 0.55, 'filledQty': 65} 
+2026-03-30 13:54:06,756 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "GET /v2/orders/222260330925816 HTTP/1.1" 200 None
+2026-03-30 13:54:12,178 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "GET /v2/orders/352260330822616 HTTP/1.1" 200 None
+2026-03-30 13:54:20,147 | __main__ | INFO | Order Executed at price 1.0
+2026-03-30 13:54:23,331 | __main__ | INFO | Position Config {'tsym': 'NIFTY-Mar2026-23000-CE', 'security_id': np.int64(62922), 'qty': 65, 'avgPrice': 1.0, 'SL': 1.2, 'target': 0.40000000000000013}
+2026-03-30 13:54:27,089 | __main__ | INFO | Order Executed at price 0.55
+2026-03-30 13:54:29,815 | __main__ | INFO | Position Config {'tsym': 'NIFTY-Mar2026-21900-PE', 'security_id': np.int64(54456), 'qty': 65, 'avgPrice': 0.55, 'SL': 0.66, 'target': 0.22000000000000008}
+2026-03-30 13:54:39,533 | __main__ | INFO | Checking for SL and target for both ce and pe
+2026-03-30 13:54:42,065 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 933
+2026-03-30 13:54:45,668 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 929
+2026-03-30 13:54:58,435 | __main__ | INFO | Checking for SL and target for both ce and pe
+2026-03-30 13:54:59,120 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 930
+2026-03-30 13:54:59,444 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 429 110
+2026-03-30 13:54:59,448 | brokerClass | ERROR | Error qres NSE_FNO 54456 {'status': 'failure', 'remarks': {'error_code': None, 'error_type': None, 'error_message': None}, 'data': ''}

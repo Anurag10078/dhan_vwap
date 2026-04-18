@@ -1,0 +1,758 @@
+2026-04-04 17:32:08,573 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-04-04 17:32:08,935 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+165574     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3719.60        2519.80         NaN
+165575     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165576     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3669.65        2469.85         NaN
+165577     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165578     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3619.65        2419.85         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+184437     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184438     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        6177.45        4977.65         NaN
+184439     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184440     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        6127.50        4927.70         NaN
+184441     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-04-04 17:32:08,945 | __main__ | INFO | Waiting for 0 seconds to start the strategy
+2026-04-04 17:32:08,952 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:23,523 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:23,549 | brokerClass | INFO | Connecting websocket...
+2026-04-04 17:32:23,551 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:29,971 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:30,074 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:32:30,075 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:32:30,076 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:32:30,076 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:32:30,076 | websockets.client | DEBUG | > Sec-WebSocket-Key: PIIJW9156RLsKaDIkilQHQ==
+2026-04-04 17:32:30,077 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:32:30,077 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:32:30,078 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:32:30,149 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:31,145 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:32:31,146 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:32:31,146 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:32:31,146 | websockets.client | DEBUG | < Sec-WebSocket-Accept: zBAhvLocodPoDMGbN8j6J+KMQAs=
+2026-04-04 17:32:31,148 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:32:31,150 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [88 bytes]
+2026-04-04 17:32:31,190 | websockets.client | DEBUG | < BINARY 32 0a 00 28 03 [5 bytes]
+2026-04-04 17:32:31,193 | websockets.client | DEBUG | > CLOSE 1000 (OK) [2 bytes]
+2026-04-04 17:32:31,194 | websockets.client | DEBUG | = connection is CLOSING
+2026-04-04 17:32:31,195 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:31,196 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:31,196 | websockets.client | DEBUG | > EOF
+2026-04-04 17:32:31,196 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:32:31,197 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:32:31,203 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:31,246 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:31,305 | websockets.client | DEBUG | > GET /?version=2&token=&clientId=1100265717&authType=2 HTTP/1.1
+2026-04-04 17:32:31,306 | websockets.client | DEBUG | > Host: api-feed.dhan.co
+2026-04-04 17:32:31,306 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:32:31,307 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:32:31,307 | websockets.client | DEBUG | > Sec-WebSocket-Key: ixAUuzE7V66+dYuQ77bVZw==
+2026-04-04 17:32:31,307 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:32:31,307 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:32:31,308 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:32:31,344 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:32:31,345 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:32:31,345 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:32:31,345 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:32:31,345 | websockets.client | DEBUG | > Sec-WebSocket-Key: Qek6czmZU5/9AqSeLZkx0Q==
+2026-04-04 17:32:31,346 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:32:31,346 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:32:31,346 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:32:31,979 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:32:31,981 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:32:31,981 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:32:31,982 | websockets.client | DEBUG | < Sec-WebSocket-Accept: fsBEI8tFbq/82hwpCBS/utiTg98=
+2026-04-04 17:32:31,982 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:32:31,983 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [88 bytes]
+2026-04-04 17:32:31,988 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:32:31,989 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:32:31,989 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:32:31,990 | websockets.client | DEBUG | < Sec-WebSocket-Accept: 6eHD+MDfryWynPVIsVex/EDjCmI=
+2026-04-04 17:32:31,990 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:32:31,991 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:31,992 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:31,992 | websockets.client | DEBUG | > EOF
+2026-04-04 17:32:31,992 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:32:31,993 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:32:31,996 | brokerClass | ERROR | Websocket error: no close frame received or sent
+2026-04-04 17:32:31,998 | brokerClass | DEBUG | Reconnecting in 3 seconds...
+2026-04-04 17:32:32,027 | websockets.client | DEBUG | < BINARY 32 0a 00 28 03 [5 bytes]
+2026-04-04 17:32:32,027 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:32,028 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:32,028 | websockets.client | DEBUG | > EOF
+2026-04-04 17:32:32,028 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:32:32,029 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:32:32,032 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:32,083 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:49,706 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:49,749 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:49,749 | brokerClass | INFO | Connecting websocket...
+2026-04-04 17:32:49,751 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:49,845 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:32:49,845 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:32:49,845 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:32:49,846 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:32:49,846 | websockets.client | DEBUG | > Sec-WebSocket-Key: SlsesT+dYVk3JqlcEN9NRw==
+2026-04-04 17:32:49,846 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:32:49,846 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:32:49,846 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:32:49,921 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:49,923 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:32:49,945 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:32:49,972 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:32:49,973 | websockets.client | DEBUG | < Sec-WebSocket-Accept: zzOrE3fHbOvZVXC3dxFSB7b/EIc=
+2026-04-04 17:32:49,975 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:32:49,976 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [88 bytes]
+2026-04-04 17:32:49,991 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-04-04 17:32:50,020 | websockets.client | DEBUG | > GET /?version=2&token=&clientId=1100265717&authType=2 HTTP/1.1
+2026-04-04 17:32:50,021 | websockets.client | DEBUG | > Host: api-feed.dhan.co
+2026-04-04 17:32:50,021 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:32:50,021 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:32:50,022 | websockets.client | DEBUG | > Sec-WebSocket-Key: BXehVVG+k+psjR4c71+Oew==
+2026-04-04 17:32:50,022 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:32:50,022 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:32:50,023 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:32:50,025 | websockets.client | DEBUG | < BINARY 32 0a 00 28 03 [5 bytes]
+2026-04-04 17:32:50,026 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:50,026 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:50,027 | websockets.client | DEBUG | > EOF
+2026-04-04 17:32:50,027 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:32:50,027 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:32:50,031 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:50,077 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:50,140 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:32:50,144 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:32:50,145 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:32:50,146 | websockets.client | DEBUG | < Sec-WebSocket-Accept: fls31E8/frdF9OtQEVGcp3cS6Ok=
+2026-04-04 17:32:50,147 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:32:50,148 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:50,149 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:50,149 | websockets.client | DEBUG | > EOF
+2026-04-04 17:32:50,149 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:32:50,150 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:32:50,152 | brokerClass | ERROR | Websocket error: no close frame received or sent
+2026-04-04 17:32:50,154 | brokerClass | DEBUG | Reconnecting in 3 seconds...
+2026-04-04 17:32:50,200 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:32:50,200 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:32:50,201 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:32:50,201 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:32:50,201 | websockets.client | DEBUG | > Sec-WebSocket-Key: 8OK4wOZj9PlAhXn459BILg==
+2026-04-04 17:32:50,201 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:32:50,202 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:32:50,202 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:32:50,279 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:32:50,279 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:32:50,280 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:32:50,280 | websockets.client | DEBUG | < Sec-WebSocket-Accept: vE7BZ1rwF8/Wt1xP8zzWWQeAnaw=
+2026-04-04 17:32:50,281 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:32:50,281 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [88 bytes]
+2026-04-04 17:32:50,345 | websockets.client | DEBUG | < BINARY 32 0a 00 28 03 [5 bytes]
+2026-04-04 17:32:50,345 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:50,346 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:50,346 | websockets.client | DEBUG | > EOF
+2026-04-04 17:32:50,346 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:32:50,347 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:32:50,351 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:50,406 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:50,511 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:32:50,512 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:32:50,512 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:32:50,513 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:32:50,513 | websockets.client | DEBUG | > Sec-WebSocket-Key: g2XIYQaPMzILgzcAWbQuRw==
+2026-04-04 17:32:50,513 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:32:50,514 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:32:50,514 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:32:50,588 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:32:50,589 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:32:50,589 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:32:50,589 | websockets.client | DEBUG | < Sec-WebSocket-Accept: sW7NCLnCZLLWw+uUjzZxXM8WDUU=
+2026-04-04 17:32:50,590 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:32:50,591 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [88 bytes]
+2026-04-04 17:32:50,635 | websockets.client | DEBUG | < BINARY 32 0a 00 28 03 [5 bytes]
+2026-04-04 17:32:50,635 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:50,635 | websockets.client | DEBUG | < EOF
+2026-04-04 17:32:50,636 | websockets.client | DEBUG | > EOF
+2026-04-04 17:32:50,636 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:32:50,636 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:32:50,640 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:32:50,692 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:32:50,794 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:32:50,794 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:32:50,795 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:32:50,795 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:32:50,795 | websockets.client | DEBUG | > Sec-WebSocket-Key: PUhr+Vs0XMHZPP3uiU2/Sw==
+2026-04-04 17:32:50,796 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:32:50,796 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:32:50,796 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:32:50,866 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:32:50,867 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:32:50,867 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:32:50,867 | websockets.client | DEBUG | < Sec-WebSocket-Accept: 4AqyeDlEv8cqhRZfwHke5Hp59so=
+2026-04-04 17:32:50,867 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:32:50,868 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [88 bytes]
+2026-04-04 17:32:50,881 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 401 None
+2026-04-04 17:36:48,880 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-04-04 17:36:49,240 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+165574     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3719.60        2519.80         NaN
+165575     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165576     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3669.65        2469.85         NaN
+165577     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165578     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3619.65        2419.85         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+184437     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184438     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        6177.45        4977.65         NaN
+184439     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184440     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        6127.50        4927.70         NaN
+184441     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-04-04 17:36:49,242 | __main__ | INFO | Waiting for 0 seconds to start the strategy
+2026-04-04 17:36:49,249 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:36:55,641 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:36:55,746 | brokerClass | INFO | Connecting websocket...
+2026-04-04 17:36:55,748 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:36:55,820 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:37:02,001 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:37:02,957 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:37:02,958 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:37:04,087 | websockets.client | DEBUG | > GET /?version=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc1MzkwNzE0LCJpYXQiOjE3NzUzMDQzMTQsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAwMjY1NzE3In0.IGXH8z_2As-c0_htFJLsJmS3n0Z22ugzy5gWNcNZ28eM2XlbLu_76GFoLzSgmINW2Ii96wgvNcs7tBaADs82nQ&clientId=1100265717&authType=2 HTTP/1.1
+2026-04-04 17:37:04,088 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:37:04,088 | websockets.client | DEBUG | > Host: api-feed.dhan.co
+2026-04-04 17:37:04,089 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:37:04,090 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:37:04,090 | websockets.client | DEBUG | > Sec-WebSocket-Key: bqlTO2qpkiFwfJKiBf9z/A==
+2026-04-04 17:37:04,091 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:37:04,091 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:37:04,092 | websockets.client | DEBUG | > Sec-WebSocket-Key: sM5iQku6OeCoYRR12AG2jg==
+2026-04-04 17:37:04,092 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:37:04,093 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:37:04,093 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:37:04,094 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:37:04,095 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:37:04,145 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:37:04,145 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:37:04,146 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:37:04,146 | websockets.client | DEBUG | < Sec-WebSocket-Accept: xz9J+5WajfgO3nR3+8gQvYp8ezs=
+2026-04-04 17:37:04,147 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:37:04,149 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [391 bytes]
+2026-04-04 17:37:05,220 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:37:05,221 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:37:05,221 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:37:05,222 | websockets.client | DEBUG | < Sec-WebSocket-Accept: 6VoHHOiHONg9uZ+SDIgECbMn/4Y=
+2026-04-04 17:37:05,222 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:37:05,224 | websockets.client | DEBUG | > TEXT '{"RequestCode": 15, "InstrumentCount": 1, "Inst..., "SecurityId": "13"}]}' [111 bytes]
+2026-04-04 17:37:05,225 | brokerClass | INFO | Websocket connected
+2026-04-04 17:37:05,296 | websockets.client | DEBUG | < BINARY 02 10 00 00 0d 00 00 00 33 72 b1 46 3e bf ce 69 [16 bytes]
+2026-04-04 17:37:05,298 | websockets.client | DEBUG | < BINARY 06 10 00 00 0d 00 00 00 cd 2e b1 46 00 00 00 00 [16 bytes]
+2026-04-04 17:37:05,307 | brokerClass | INFO | TICK: {'type': 'Previous Close', 'exchange_segment': 0, 'security_id': 13, 'prev_close': '22679.40', 'prev_OI': 0}
+2026-04-04 17:37:05,321 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-04-04 17:37:05,771 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:37:05,771 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:37:06,157 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-04-04 17:38:00,219 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-04-04 17:38:00,587 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+165574     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3719.60        2519.80         NaN
+165575     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165576     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3669.65        2469.85         NaN
+165577     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165578     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3619.65        2419.85         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+184437     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184438     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        6177.45        4977.65         NaN
+184439     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184440     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        6127.50        4927.70         NaN
+184441     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-04-04 17:38:00,589 | __main__ | INFO | Waiting for 0 seconds to start the strategy
+2026-04-04 17:38:00,594 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:38:07,978 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:38:08,099 | brokerClass | INFO | Connecting websocket...
+2026-04-04 17:38:08,101 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:38:08,159 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:38:10,952 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:38:10,952 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:38:10,953 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:38:10,953 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:38:10,953 | websockets.client | DEBUG | > Sec-WebSocket-Key: FGwzz3PmKgbku/OZ4ZxldQ==
+2026-04-04 17:38:10,953 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:38:10,953 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:38:10,954 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:38:11,046 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:38:11,047 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:38:11,047 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:38:11,047 | websockets.client | DEBUG | < Sec-WebSocket-Accept: 7AhIK/k6Gx1u9N7PZhoKyVTBaSY=
+2026-04-04 17:38:11,048 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:38:11,051 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [391 bytes]
+2026-04-04 17:38:11,057 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:38:11,996 | websockets.client | DEBUG | > GET /?version=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc1MzkwNzE0LCJpYXQiOjE3NzUzMDQzMTQsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAwMjY1NzE3In0.IGXH8z_2As-c0_htFJLsJmS3n0Z22ugzy5gWNcNZ28eM2XlbLu_76GFoLzSgmINW2Ii96wgvNcs7tBaADs82nQ&clientId=1100265717&authType=2 HTTP/1.1
+2026-04-04 17:38:11,997 | websockets.client | DEBUG | > Host: api-feed.dhan.co
+2026-04-04 17:38:11,997 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:38:11,997 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:38:11,997 | websockets.client | DEBUG | > Sec-WebSocket-Key: BzCUz8df3MOpcKlPgTda6g==
+2026-04-04 17:38:11,998 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:38:11,998 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:38:11,998 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:38:12,910 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:38:12,911 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:38:12,912 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:38:12,912 | websockets.client | DEBUG | < Sec-WebSocket-Accept: CPvhDMqw/x2qkl2SjGjJ2rsCqSw=
+2026-04-04 17:38:12,912 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:38:12,914 | websockets.client | DEBUG | > TEXT '{"RequestCode": 15, "InstrumentCount": 1, "Inst..., "SecurityId": "13"}]}' [111 bytes]
+2026-04-04 17:38:12,915 | brokerClass | INFO | Websocket connected
+2026-04-04 17:38:12,957 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:38:12,958 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:38:12,958 | websockets.client | DEBUG | < BINARY 02 10 00 00 0d 00 00 00 33 72 b1 46 3e bf ce 69 [16 bytes]
+2026-04-04 17:38:12,959 | websockets.client | DEBUG | < BINARY 06 10 00 00 0d 00 00 00 cd 2e b1 46 00 00 00 00 [16 bytes]
+2026-04-04 17:38:12,970 | brokerClass | INFO | TICK: {'type': 'Previous Close', 'exchange_segment': 0, 'security_id': 13, 'prev_close': '22679.40', 'prev_OI': 0}
+2026-04-04 17:38:13,902 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-04-04 17:38:14,783 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-04-04 17:38:23,372 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:38:23,373 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:38:23,604 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low    close      volume          vwap
+46 2026-04-02 14:30:00+05:30  22665.55  22706.65  22572.85  22584.6  23591726.0  22355.009830
+47 2026-04-02 14:45:00+05:30  22584.40  22667.15  22569.15  22658.3  17260972.0  22367.359026
+48 2026-04-02 15:00:00+05:30  22659.00  22761.95  22650.80  22760.4  55405992.0  22412.121765
+49 2026-04-02 15:15:00+05:30  22761.95  22782.30  22673.60  22700.7  49542153.0  22443.043750
+50 2026-04-02 15:30:00+05:30  22700.70  22700.70  22700.70  22700.7   1264543.0  22443.705011
+2026-04-04 17:40:01,057 | websockets.client | DEBUG | > PING db e9 25 80 [binary, 4 bytes]
+2026-04-04 17:40:01,059 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:40:01,106 | websockets.client | DEBUG | < PONG db e9 25 80 [binary, 4 bytes]
+2026-04-04 17:40:01,106 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:40:01,143 | websockets.client | DEBUG | > PING c6 4e f0 d6 [binary, 4 bytes]
+2026-04-04 17:40:01,145 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:40:01,146 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:40:01,146 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:40:01,148 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:40:01,149 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:40:01,209 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:40:01,212 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:40:01,212 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:40:01,213 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:40:01,214 | websockets.client | DEBUG | < EOF
+2026-04-04 17:40:01,215 | websockets.client | DEBUG | < EOF
+2026-04-04 17:40:01,215 | websockets.client | DEBUG | > EOF
+2026-04-04 17:40:01,216 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:40:01,216 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:40:01,228 | brokerClass | ERROR | Websocket error: Feed dropped
+2026-04-04 17:40:01,263 | brokerClass | DEBUG | Reconnecting in 3 seconds...
+2026-04-04 17:40:44,381 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-04-04 17:40:44,684 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+165574     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3719.60        2519.80         NaN
+165575     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165576     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3669.65        2469.85         NaN
+165577     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165578     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3619.65        2419.85         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+184437     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184438     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        6177.45        4977.65         NaN
+184439     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184440     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        6127.50        4927.70         NaN
+184441     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-04-04 17:40:44,686 | __main__ | INFO | Waiting for 0 seconds to start the strategy
+2026-04-04 17:40:44,692 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:40:44,695 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:40:55,417 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-04-04 17:40:55,550 | brokerClass | INFO | Connecting websocket...
+2026-04-04 17:40:55,553 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:41:03,392 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:41:03,393 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:41:04,026 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:41:04,027 | websockets.client | DEBUG | > GET /?version=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc1MzkwNzE0LCJpYXQiOjE3NzUzMDQzMTQsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAwMjY1NzE3In0.IGXH8z_2As-c0_htFJLsJmS3n0Z22ugzy5gWNcNZ28eM2XlbLu_76GFoLzSgmINW2Ii96wgvNcs7tBaADs82nQ&clientId=1100265717&authType=2 HTTP/1.1
+2026-04-04 17:41:04,028 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:41:04,028 | websockets.client | DEBUG | > Host: api-feed.dhan.co
+2026-04-04 17:41:04,029 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:41:04,029 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:41:04,030 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:41:04,030 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:41:04,031 | websockets.client | DEBUG | > Sec-WebSocket-Key: Hwa6+0JijYw0sqf1NybomQ==
+2026-04-04 17:41:04,031 | websockets.client | DEBUG | > Sec-WebSocket-Key: 4kMdWtqoLtbEDoI9isjgvg==
+2026-04-04 17:41:04,032 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:41:04,032 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:41:04,033 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:41:04,033 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:41:04,033 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:41:04,034 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:41:04,350 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-04-04 17:41:07,968 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:41:07,969 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:41:07,969 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:41:07,970 | websockets.client | DEBUG | < Sec-WebSocket-Accept: KWpHHOuZeKziDufj9r8W1vw+LDE=
+2026-04-04 17:41:07,972 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:41:07,973 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:41:07,974 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:41:07,977 | brokerClass | ERROR | Websocket error: timed out during opening handshake
+2026-04-04 17:41:07,978 | websockets.client | DEBUG | < EOF
+2026-04-04 17:41:07,979 | websockets.client | DEBUG | < EOF
+2026-04-04 17:41:07,979 | websockets.client | DEBUG | > EOF
+2026-04-04 17:41:07,979 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:41:07,981 | brokerClass | DEBUG | Reconnecting in 3 seconds...
+2026-04-04 17:41:08,171 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:41:08,171 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:41:08,172 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:41:08,173 | websockets.client | DEBUG | < Sec-WebSocket-Accept: +bp/gplz9wyyte5VfsecB75TSFE=
+2026-04-04 17:41:08,173 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:41:17,436 | brokerClass | INFO | Connecting websocket...
+2026-04-04 17:41:17,442 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:41:17,498 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:41:17,555 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:41:17,613 | websockets.client | DEBUG | > GET /?version=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc1MzkwNzE0LCJpYXQiOjE3NzUzMDQzMTQsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAwMjY1NzE3In0.IGXH8z_2As-c0_htFJLsJmS3n0Z22ugzy5gWNcNZ28eM2XlbLu_76GFoLzSgmINW2Ii96wgvNcs7tBaADs82nQ&clientId=1100265717&authType=2 HTTP/1.1
+2026-04-04 17:41:17,613 | websockets.client | DEBUG | > Host: api-feed.dhan.co
+2026-04-04 17:41:17,614 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:41:17,614 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:41:17,614 | websockets.client | DEBUG | > Sec-WebSocket-Key: XtgaIW/oSe4XQlGYLIkN3A==
+2026-04-04 17:41:17,615 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:41:17,615 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:41:17,615 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:41:17,617 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:41:19,744 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:41:19,745 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:41:19,745 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:41:19,745 | websockets.client | DEBUG | < Sec-WebSocket-Accept: zFMC0C5S4ivZUpFf/c2LxPmMkps=
+2026-04-04 17:41:19,746 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:41:19,747 | websockets.client | DEBUG | > TEXT '{"RequestCode": 15, "InstrumentCount": 1, "Inst..., "SecurityId": "13"}]}' [111 bytes]
+2026-04-04 17:41:19,749 | brokerClass | INFO | Websocket connected
+2026-04-04 17:41:19,808 | websockets.client | DEBUG | < BINARY 02 10 00 00 0d 00 00 00 33 72 b1 46 3e bf ce 69 [16 bytes]
+2026-04-04 17:41:19,809 | websockets.client | DEBUG | < BINARY 06 10 00 00 0d 00 00 00 cd 2e b1 46 00 00 00 00 [16 bytes]
+2026-04-04 17:41:19,870 | brokerClass | INFO | Tick : {'type': 'Ticker Data', 'exchange_segment': 0, 'security_id': 13, 'LTP': '22713.10', 'LTT': '19:10:54'}
+2026-04-04 17:41:19,878 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:41:19,918 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:41:19,932 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:41:19,932 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:41:19,933 | websockets.client | DEBUG | > Sec-WebSocket-Key: jwxK/DJNWDSYCFPWLX/aIA==
+2026-04-04 17:41:19,933 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:41:19,933 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:41:19,933 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:41:21,986 | brokerClass | INFO | Feed : 1 
+        ltp                       ltt
+0  22713.1 2026-04-04 19:10:54+05:30
+2026-04-04 17:41:21,989 | brokerClass | INFO | TICK: {'type': 'Previous Close', 'exchange_segment': 0, 'security_id': 13, 'prev_close': '22679.40', 'prev_OI': 0}
+2026-04-04 17:41:22,037 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:41:22,037 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:41:22,038 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:41:22,038 | websockets.client | DEBUG | < Sec-WebSocket-Accept: eaNxxahkn8wMPKC02Xq5s7H6N88=
+2026-04-04 17:41:22,039 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:41:22,040 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [391 bytes]
+2026-04-04 17:41:23,076 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:41:23,078 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:41:23,078 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low    close      volume          vwap
+46 2026-04-02 14:30:00+05:30  22665.55  22706.65  22572.85  22584.6  23591726.0  22355.009830
+47 2026-04-02 14:45:00+05:30  22584.40  22667.15  22569.15  22658.3  17260972.0  22367.359026
+48 2026-04-02 15:00:00+05:30  22659.00  22761.95  22650.80  22760.4  55405992.0  22412.121765
+49 2026-04-02 15:15:00+05:30  22761.95  22782.30  22673.60  22700.7  49542153.0  22443.043750
+50 2026-04-02 15:30:00+05:30  22700.70  22700.70  22700.70  22700.7   1264543.0  22443.705011
+2026-04-04 17:41:58,637 | websockets.client | DEBUG | > PING 53 13 92 67 [binary, 4 bytes]
+2026-04-04 17:41:58,641 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:41:58,642 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:41:58,643 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:41:58,645 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:41:58,645 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:41:58,645 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:41:58,646 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:41:58,646 | websockets.client | DEBUG | > PING fd 9e 81 8d [binary, 4 bytes]
+2026-04-04 17:41:58,647 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:41:58,690 | websockets.client | DEBUG | < PONG 53 13 92 67 [binary, 4 bytes]
+2026-04-04 17:41:58,691 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:41:58,738 | websockets.client | DEBUG | < PONG fd 9e 81 8d [binary, 4 bytes]
+2026-04-04 17:41:58,739 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:42:35,982 | websockets.client | DEBUG | > PING da 09 cc dc [binary, 4 bytes]
+2026-04-04 17:42:35,985 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:42:35,985 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:42:35,986 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:42:35,987 | websockets.client | DEBUG | > PING 0e e4 65 8d [binary, 4 bytes]
+2026-04-04 17:42:35,988 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:42:35,989 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:42:35,989 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:42:35,989 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:42:35,990 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:42:35,991 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:42:35,992 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:42:35,992 | websockets.client | DEBUG | < EOF
+2026-04-04 17:42:35,993 | websockets.client | DEBUG | < EOF
+2026-04-04 17:42:35,993 | websockets.client | DEBUG | > EOF
+2026-04-04 17:42:35,993 | websockets.client | DEBUG | = connection is CLOSED
+2026-04-04 17:42:35,994 | websockets.client | DEBUG | x closing TCP connection
+2026-04-04 17:42:35,996 | brokerClass | ERROR | Websocket error: Feed dropped
+2026-04-04 17:42:35,999 | brokerClass | DEBUG | Reconnecting in 3 seconds...
+2026-04-04 17:42:36,037 | websockets.client | DEBUG | < PONG da 09 cc dc [binary, 4 bytes]
+2026-04-04 17:42:36,038 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:42:39,000 | brokerClass | INFO | Connecting websocket...
+2026-04-04 17:42:39,008 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:42:41,369 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:42:41,491 | websockets.client | DEBUG | > GET /?version=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc1MzkwNzE0LCJpYXQiOjE3NzUzMDQzMTQsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAwMjY1NzE3In0.IGXH8z_2As-c0_htFJLsJmS3n0Z22ugzy5gWNcNZ28eM2XlbLu_76GFoLzSgmINW2Ii96wgvNcs7tBaADs82nQ&clientId=1100265717&authType=2 HTTP/1.1
+2026-04-04 17:42:41,492 | websockets.client | DEBUG | > Host: api-feed.dhan.co
+2026-04-04 17:42:41,492 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:42:41,492 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:42:41,492 | websockets.client | DEBUG | > Sec-WebSocket-Key: bK1jh/DzvXxw6mGUO5cp9A==
+2026-04-04 17:42:41,493 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:42:41,493 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:42:41,493 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:42:42,853 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:42:42,854 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:42:42,854 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:42:42,855 | websockets.client | DEBUG | < Sec-WebSocket-Accept: XYurzqcqAGHulARRexkPNTRMu+4=
+2026-04-04 17:42:42,855 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:42:42,856 | websockets.client | DEBUG | > TEXT '{"RequestCode": 15, "InstrumentCount": 1, "Inst..., "SecurityId": "13"}]}' [111 bytes]
+2026-04-04 17:42:42,858 | brokerClass | INFO | Websocket connected
+2026-04-04 17:42:42,911 | websockets.client | DEBUG | < BINARY 02 10 00 00 0d 00 00 00 33 72 b1 46 3e bf ce 69 [16 bytes]
+2026-04-04 17:42:42,912 | websockets.client | DEBUG | < BINARY 06 10 00 00 0d 00 00 00 cd 2e b1 46 00 00 00 00 [16 bytes]
+2026-04-04 17:42:42,915 | brokerClass | INFO | Tick : {'type': 'Ticker Data', 'exchange_segment': 0, 'security_id': 13, 'LTP': '22713.10', 'LTT': '19:10:54'}
+2026-04-04 17:42:45,621 | brokerClass | INFO | Feed : 1 
+        ltp                       ltt
+0  22713.1 2026-04-04 19:10:54+05:30
+2026-04-04 17:42:45,623 | brokerClass | INFO | TICK: {'type': 'Previous Close', 'exchange_segment': 0, 'security_id': 13, 'prev_close': '22679.40', 'prev_OI': 0}
+2026-04-04 17:42:45,626 | __main__ | INFO | Condition is buy
+2026-04-04 17:42:47,229 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:42:47,231 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:42:57,226 | websockets.client | DEBUG | > PING 7e 48 2a ce [binary, 4 bytes]
+2026-04-04 17:42:57,229 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:42:57,229 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:42:57,231 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:42:57,286 | websockets.client | DEBUG | < PONG 7e 48 2a ce [binary, 4 bytes]
+2026-04-04 17:42:57,287 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:43:02,866 | websockets.client | DEBUG | > PING fb 70 11 57 [binary, 4 bytes]
+2026-04-04 17:43:02,868 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:43:03,939 | websockets.client | DEBUG | < PONG fb 70 11 57 [binary, 4 bytes]
+2026-04-04 17:43:03,941 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:43:04,873 | __main__ | INFO | Placing sell order for PE i.e. upside view 
+2026-04-04 17:43:06,867 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:43:06,869 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:43:10,532 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-04-04 17:43:21,707 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:43:21,709 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:43:21,720 | websockets.client | DEBUG | > PING '/YY1' [text, 4 bytes]
+2026-04-04 17:43:21,722 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:43:21,775 | websockets.client | DEBUG | < PONG '/YY1' [text, 4 bytes]
+2026-04-04 17:43:21,776 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:43:27,639 | websockets.client | DEBUG | > PING c6 c1 4a fd [binary, 4 bytes]
+2026-04-04 17:43:27,641 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:43:27,642 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:43:27,643 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:43:31,851 | websockets.client | DEBUG | < PONG c6 c1 4a fd [binary, 4 bytes]
+2026-04-04 17:43:31,853 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:43:45,803 | websockets.client | DEBUG | > PING a6 b5 6a 3f [binary, 4 bytes]
+2026-04-04 17:43:45,805 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:43:45,853 | websockets.client | DEBUG | < PONG a6 b5 6a 3f [binary, 4 bytes]
+2026-04-04 17:43:45,854 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:43:45,927 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:43:45,928 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:43:45,929 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:43:45,930 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:43:45,988 | __main__ | INFO | Placing sell order for PE NIFTY-Apr2026-22150-PE at strike 22150
+2026-04-04 17:43:56,046 | websockets.client | DEBUG | > PING 1a 2c c6 19 [binary, 4 bytes]
+2026-04-04 17:43:56,048 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:43:56,049 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:43:56,050 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:43:56,110 | websockets.client | DEBUG | < PONG 1a 2c c6 19 [binary, 4 bytes]
+2026-04-04 17:43:56,111 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:43:59,209 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 869
+2026-04-04 17:44:07,840 | websockets.client | DEBUG | > PING aa 19 60 95 [binary, 4 bytes]
+2026-04-04 17:44:07,842 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:44:07,871 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:44:07,872 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:44:07,891 | websockets.client | DEBUG | < PONG aa 19 60 95 [binary, 4 bytes]
+2026-04-04 17:44:07,892 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:44:08,054 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/orders HTTP/1.1" 400 None
+2026-04-04 17:44:08,056 | brokerClass | INFO | Order placed for 40708 SELL 65 LIMIT limitPrice 96.25 triggerPrice 0 
+ {'status': 'failure', 'remarks': {'error_code': 'DH-905', 'error_type': 'Input_Exception', 'error_message': 'Invalid IP'}, 'data': ''}
+2026-04-04 17:44:16,828 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:44:16,829 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:44:16,831 | websockets.client | DEBUG | > PING 46 a0 eb b4 [binary, 4 bytes]
+2026-04-04 17:44:16,831 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:44:16,935 | websockets.client | DEBUG | < PONG 46 a0 eb b4 [binary, 4 bytes]
+2026-04-04 17:44:16,936 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:44:17,028 | __main__ | INFO | Placed sell order for PE NIFTY-Apr2026-22150-PE with order id None
+2026-04-04 17:44:27,512 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:44:27,513 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:44:29,281 | websockets.client | DEBUG | > PING ca a5 16 a7 [binary, 4 bytes]
+2026-04-04 17:44:29,283 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:44:29,331 | websockets.client | DEBUG | < PONG ca a5 16 a7 [binary, 4 bytes]
+2026-04-04 17:44:29,332 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:44:39,117 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:44:39,118 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:44:39,119 | websockets.client | DEBUG | > PING d8 b3 94 29 [binary, 4 bytes]
+2026-04-04 17:44:39,120 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:44:40,130 | websockets.client | DEBUG | < PONG d8 b3 94 29 [binary, 4 bytes]
+2026-04-04 17:44:40,132 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:44:40,177 | brokerClass | INFO | Order None not found in order pool  : dict_keys([])
+2026-04-04 17:44:41,286 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "GET /v2/orders/None HTTP/1.1" 200 None
+2026-04-04 17:44:41,288 | brokerClass | ERROR | Error in getting orderInfo for None
+Traceback (most recent call last):
+  File "D:\dhan_vwap\brokerClass.py", line 279, in getOrderByID
+    return orderRes['data'][0]
+           ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-04-04 17:44:43,240 | __main__ | INFO | Order Status None
+2026-04-04 17:44:45,879 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:44:45,880 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:44:46,822 | __main__ | ERROR | Error in scanning condition 1
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 132, in orderforcond1
+    if orderInfo['orderStatus'] == 'TRADED':
+       ~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-04-04 17:45:11,981 | utility | DEBUG | Expiry List  [datetime.date(2026, 4, 7), datetime.date(2026, 4, 13), datetime.date(2026, 4, 21), datetime.date(2026, 4, 28), datetime.date(2026, 5, 5), datetime.date(2026, 5, 26), datetime.date(2026, 6, 30), datetime.date(2026, 9, 29), datetime.date(2026, 12, 29), datetime.date(2027, 3, 30), datetime.date(2027, 6, 29), datetime.date(2027, 12, 28), datetime.date(2028, 6, 27), datetime.date(2028, 12, 26), datetime.date(2029, 6, 26), datetime.date(2029, 12, 24), datetime.date(2030, 6, 25), datetime.date(2030, 12, 31)]
+2026-04-04 17:45:12,303 | utility | DEBUG | Symbol Master 
+         EXCH_ID SEGMENT  SECURITY_ID ISIN INSTRUMENT  ...  BUY_BO_PROFIT_RANGE_MIN_PERC MTF_LEVERAGE SM_UPPER_LIMIT SM_LOWER_LIMIT Unnamed: 31
+165574     NSE       D        40530  NaN     OPTIDX  ...                           0.0          0.0        3719.60        2519.80         NaN
+165575     NSE       D        40531  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165576     NSE       D        40532  NaN     OPTIDX  ...                           0.0          0.0        3669.65        2469.85         NaN
+165577     NSE       D        40533  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+165578     NSE       D        40534  NaN     OPTIDX  ...                           0.0          0.0        3619.65        2419.85         NaN
+...        ...     ...          ...  ...        ...  ...                           ...          ...            ...            ...         ...
+184437     NSE       D        78847  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184438     NSE       D        78848  NaN     OPTIDX  ...                           0.0          0.0        6177.45        4977.65         NaN
+184439     NSE       D        78849  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+184440     NSE       D        78850  NaN     OPTIDX  ...                           0.0          0.0        6127.50        4927.70         NaN
+184441     NSE       D        78851  NaN     OPTIDX  ...                           0.0          0.0          20.05           0.05         NaN
+
+[522 rows x 32 columns]
+2026-04-04 17:45:12,305 | __main__ | INFO | Waiting for 0 seconds to start the strategy
+2026-04-04 17:45:12,311 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:45:12,314 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:45:17,659 | brokerClass | INFO | Connecting websocket...
+2026-04-04 17:45:17,662 | asyncio | DEBUG | Using proactor: IocpProactor
+2026-04-04 17:45:17,676 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:45:19,717 | websockets.client | DEBUG | > GET / HTTP/1.1
+2026-04-04 17:45:19,718 | websockets.client | DEBUG | > Host: api-order-update.dhan.co
+2026-04-04 17:45:19,718 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:45:19,718 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:45:19,718 | websockets.client | DEBUG | > Sec-WebSocket-Key: ErGErSCHmhPzk+FLeukw0w==
+2026-04-04 17:45:19,719 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:45:19,719 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:45:19,719 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:45:20,283 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:45:20,284 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:45:20,284 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:45:20,284 | websockets.client | DEBUG | < Sec-WebSocket-Accept: lRAi0YnJvCwtr1kxRpg19AWeFLY=
+2026-04-04 17:45:20,286 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:45:20,288 | websockets.client | DEBUG | > TEXT '{"LoginReq": {"MsgCode": 42, "ClientId": "11002..."}, "UserType": "SELF"}' [391 bytes]
+2026-04-04 17:45:20,290 | websockets.client | DEBUG | = connection is CONNECTING
+2026-04-04 17:45:20,394 | websockets.client | DEBUG | > GET /?version=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc1MzkwNzE0LCJpYXQiOjE3NzUzMDQzMTQsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAwMjY1NzE3In0.IGXH8z_2As-c0_htFJLsJmS3n0Z22ugzy5gWNcNZ28eM2XlbLu_76GFoLzSgmINW2Ii96wgvNcs7tBaADs82nQ&clientId=1100265717&authType=2 HTTP/1.1
+2026-04-04 17:45:20,394 | websockets.client | DEBUG | > Host: api-feed.dhan.co
+2026-04-04 17:45:20,394 | websockets.client | DEBUG | > Upgrade: websocket
+2026-04-04 17:45:20,395 | websockets.client | DEBUG | > Connection: Upgrade
+2026-04-04 17:45:20,395 | websockets.client | DEBUG | > Sec-WebSocket-Key: eJkkTZfTX9djx/ob1682CQ==
+2026-04-04 17:45:20,396 | websockets.client | DEBUG | > Sec-WebSocket-Version: 13
+2026-04-04 17:45:20,396 | websockets.client | DEBUG | > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-04 17:45:20,396 | websockets.client | DEBUG | > User-Agent: Python/3.13 websockets/16.0
+2026-04-04 17:45:20,925 | websockets.client | DEBUG | < HTTP/1.1 101 Switching Protocols
+2026-04-04 17:45:20,926 | websockets.client | DEBUG | < Upgrade: websocket
+2026-04-04 17:45:20,926 | websockets.client | DEBUG | < Connection: Upgrade
+2026-04-04 17:45:20,927 | websockets.client | DEBUG | < Sec-WebSocket-Accept: 9LJKGVg7QHHpjvRII6sGKpIdttE=
+2026-04-04 17:45:20,928 | websockets.client | DEBUG | = connection is OPEN
+2026-04-04 17:45:20,930 | websockets.client | DEBUG | > TEXT '{"RequestCode": 15, "InstrumentCount": 1, "Inst..., "SecurityId": "13"}]}' [111 bytes]
+2026-04-04 17:45:20,933 | brokerClass | INFO | Websocket connected
+2026-04-04 17:45:20,983 | websockets.client | DEBUG | < BINARY 02 10 00 00 0d 00 00 00 33 72 b1 46 3e bf ce 69 [16 bytes]
+2026-04-04 17:45:20,984 | websockets.client | DEBUG | < BINARY 06 10 00 00 0d 00 00 00 cd 2e b1 46 00 00 00 00 [16 bytes]
+2026-04-04 17:45:20,992 | brokerClass | INFO | TICK: {'type': 'Previous Close', 'exchange_segment': 0, 'security_id': 13, 'prev_close': '22679.40', 'prev_OI': 0}
+2026-04-04 17:45:21,570 | urllib3.connectionpool | DEBUG | Starting new HTTPS connection (1): api.dhan.co:443
+2026-04-04 17:45:22,452 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-04-04 17:45:23,664 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:45:23,664 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:45:26,809 | __main__ | INFO | Got candle data for condition check                    timestamp      open      high       low    close      volume          vwap
+46 2026-04-02 14:30:00+05:30  22665.55  22706.65  22572.85  22584.6  23591726.0  22355.009830
+47 2026-04-02 14:45:00+05:30  22584.40  22667.15  22569.15  22658.3  17260972.0  22367.359026
+48 2026-04-02 15:00:00+05:30  22659.00  22761.95  22650.80  22760.4  55405992.0  22412.121765
+49 2026-04-02 15:15:00+05:30  22761.95  22782.30  22673.60  22700.7  49542153.0  22443.043750
+50 2026-04-02 15:30:00+05:30  22700.70  22700.70  22700.70  22700.7   1264543.0  22443.705011
+2026-04-04 17:45:55,982 | websockets.client | DEBUG | > PING ac 4b 74 0b [binary, 4 bytes]
+2026-04-04 17:45:55,984 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:45:56,035 | websockets.client | DEBUG | < PONG ac 4b 74 0b [binary, 4 bytes]
+2026-04-04 17:45:56,036 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:45:56,163 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:45:56,164 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:45:56,165 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:45:56,166 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:45:56,166 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:45:56,166 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:45:56,167 | websockets.client | DEBUG | > PING b4 34 58 57 [binary, 4 bytes]
+2026-04-04 17:45:56,168 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:45:57,113 | websockets.client | DEBUG | < PONG b4 34 58 57 [binary, 4 bytes]
+2026-04-04 17:45:57,114 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:46:01,798 | __main__ | INFO | Condition is neutral
+2026-04-04 17:46:04,223 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:46:04,224 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:46:14,647 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:46:14,647 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:46:16,860 | websockets.client | DEBUG | > PING ae be a6 d8 [binary, 4 bytes]
+2026-04-04 17:46:16,862 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:46:16,910 | websockets.client | DEBUG | < PONG ae be a6 d8 [binary, 4 bytes]
+2026-04-04 17:46:16,911 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:46:16,994 | websockets.client | DEBUG | > PING '">F!' [text, 4 bytes]
+2026-04-04 17:46:16,996 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:46:17,044 | websockets.client | DEBUG | < PONG '">F!' [text, 4 bytes]
+2026-04-04 17:46:17,045 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:46:17,939 | __main__ | INFO | Placing sell order for pe ce both  a straddle 
+2026-04-04 17:46:20,173 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/charts/intraday HTTP/1.1" 200 None
+2026-04-04 17:46:22,367 | __main__ | INFO | Strike selected  22700
+2026-04-04 17:46:23,208 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:46:23,208 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:46:32,132 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 870
+2026-04-04 17:46:38,877 | websockets.client | DEBUG | > PING d3 cc 3e 0e [binary, 4 bytes]
+2026-04-04 17:46:38,878 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:46:38,930 | websockets.client | DEBUG | < PONG d3 cc 3e 0e [binary, 4 bytes]
+2026-04-04 17:46:38,931 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:46:39,076 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:46:39,077 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:46:39,078 | websockets.client | DEBUG | > PING b8 63 84 ba [binary, 4 bytes]
+2026-04-04 17:46:39,078 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:46:39,171 | websockets.client | DEBUG | < PONG b8 63 84 ba [binary, 4 bytes]
+2026-04-04 17:46:39,172 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:46:39,182 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/orders HTTP/1.1" 400 None
+2026-04-04 17:46:39,184 | brokerClass | INFO | Order placed for 40783 BUY 65 LIMIT limitPrice 61.6 triggerPrice 0 
+ {'status': 'failure', 'remarks': {'error_code': 'DH-905', 'error_type': 'Input_Exception', 'error_message': 'Invalid IP'}, 'data': ''}
+2026-04-04 17:46:47,533 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:46:47,534 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:46:47,691 | __main__ | INFO | Order placed with order id  None  with strike 22700 in ce
+2026-04-04 17:46:53,262 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:46:53,263 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:46:53,543 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/marketfeed/quote HTTP/1.1" 200 869
+2026-04-04 17:46:54,451 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "POST /v2/orders HTTP/1.1" 400 None
+2026-04-04 17:46:54,453 | brokerClass | INFO | Order placed for 40708 BUY 65 LIMIT limitPrice 97.2 triggerPrice 0 
+ {'status': 'failure', 'remarks': {'error_code': 'DH-905', 'error_type': 'Input_Exception', 'error_message': 'Invalid IP'}, 'data': ''}
+2026-04-04 17:46:59,195 | websockets.client | DEBUG | > PING 66 24 e7 9d [binary, 4 bytes]
+2026-04-04 17:46:59,197 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:46:59,262 | websockets.client | DEBUG | < PONG 66 24 e7 9d [binary, 4 bytes]
+2026-04-04 17:46:59,263 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:46:59,285 | websockets.client | DEBUG | > PING 70 6f b4 3b [binary, 4 bytes]
+2026-04-04 17:46:59,286 | websockets.client | DEBUG | % sent keepalive ping
+2026-04-04 17:46:59,339 | websockets.client | DEBUG | < PONG 70 6f b4 3b [binary, 4 bytes]
+2026-04-04 17:46:59,340 | websockets.client | DEBUG | % received keepalive pong
+2026-04-04 17:46:59,409 | __main__ | INFO | Order placed with order id None  with strike 22700 in pe 
+2026-04-04 17:47:03,222 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:47:03,222 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:47:03,329 | brokerClass | INFO | Order None not found in order pool  : dict_keys([])
+2026-04-04 17:47:04,421 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "GET /v2/orders/None HTTP/1.1" 200 None
+2026-04-04 17:47:04,423 | brokerClass | ERROR | Error in getting orderInfo for None
+Traceback (most recent call last):
+  File "D:\dhan_vwap\brokerClass.py", line 279, in getOrderByID
+    return orderRes['data'][0]
+           ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-04-04 17:47:07,189 | brokerClass | INFO | Order None not found in order pool  : dict_keys([])
+2026-04-04 17:47:08,279 | urllib3.connectionpool | DEBUG | https://api.dhan.co:443 "GET /v2/orders/None HTTP/1.1" 200 None
+2026-04-04 17:47:08,281 | brokerClass | ERROR | Error in getting orderInfo for None
+Traceback (most recent call last):
+  File "D:\dhan_vwap\brokerClass.py", line 279, in getOrderByID
+    return orderRes['data'][0]
+           ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-04-04 17:47:09,409 | __main__ | INFO | Order Status for CE None 
+2026-04-04 17:47:11,203 | __main__ | INFO | Order Status for PE None 
+2026-04-04 17:47:14,662 | websockets.client | DEBUG | < PING 'Ping' [text, 4 bytes]
+2026-04-04 17:47:14,663 | websockets.client | DEBUG | > PONG 'Ping' [text, 4 bytes]
+2026-04-04 17:47:15,981 | __main__ | ERROR | Error in scanning condition 2
+Traceback (most recent call last):
+  File "D:\dhan_vwap\main.py", line 215, in orderforcond2
+    if orderInfo_ce['orderStatus'] == 'TRADED' and orderInfo_pe['orderStatus'] == 'TRADED':
+       ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
