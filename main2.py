@@ -18,8 +18,8 @@ from brokerClass import DhanAPICleint
 def ce_sec_id(dhanObj:DhanAPICleint,ltp_spot):
     try:
         masterdf=config.MASTER_DF
-        current_strike=round(ltp_spot/50)*50
-        final_strike_ce=current_strike+config.TILL_OTM*50
+        current_strike=round(ltp_spot/config.SYM_MAP['NIFTY'][1])*config.SYM_MAP['NIFTY'][1]
+        final_strike_ce=current_strike+config.TILL_OTM*config.SYM_MAP['NIFTY'][1]
         requiredce=masterdf[(masterdf['STRIKE_PRICE']>=current_strike) & (masterdf['STRIKE_PRICE']<=final_strike_ce) & (masterdf['OPTION_TYPE']=='CE')]
         sec_ce_list=requiredce.SECURITY_ID.tolist()
         res=dhanObj.get_ticker_response(instrument=sec_ce_list)
@@ -39,8 +39,8 @@ def ce_sec_id(dhanObj:DhanAPICleint,ltp_spot):
 def pe_sec_id(dhanObj:DhanAPICleint,ltp_spot):
     try:
         masterdf=config.MASTER_DF
-        current_strike=round(ltp_spot/50)*50
-        final_strike_pe=current_strike-config.TILL_OTM*50
+        current_strike=round(ltp_spot/config.SYM_MAP['NIFTY'][1])*config.SYM_MAP['NIFTY'][1]
+        final_strike_pe=current_strike-config.TILL_OTM*config.SYM_MAP['NIFTY'][1]
         requiredpe=masterdf[(masterdf['STRIKE_PRICE']<=current_strike) & (masterdf['STRIKE_PRICE']>=final_strike_pe) & (masterdf['OPTION_TYPE']=='PE')]
         sec_pe_list=requiredpe.SECURITY_ID.tolist()
         res=dhanObj.get_ticker_response(instrument=sec_pe_list)
@@ -228,33 +228,18 @@ def main( ):
     
     utility.intializeMasterSym()
     dhanObj = DhanAPICleint()
+    
     spot_ltp=dhanObj.getLtp(security_id=config.SYM_MAP['NIFTY'][0],exchange='IDX_I')
     thread1 = threading.Thread(target=ce_sec_id, args=(dhanObj, spot_ltp))
     thread2 = threading.Thread(target=pe_sec_id, args=(dhanObj, spot_ltp))
     thread1.start()
     thread2.start()
-    # startTime =  datetime.now(config.TIME_ZONE)
-    # closingTime = startTime.replace(hour=config.START_TIME[0], minute=config.START_TIME[1],second=config.START_TIME[2])
-    # secondsToWait = max(0,(closingTime - startTime).total_seconds())
-    # logger.info(f'Waiting for {secondsToWait} seconds to start the strategy')
-    # sleep(secondsToWait)
-    #dhanObj.startWebsocket()
+    dhanObj.start_websocket()
     
-    
-    
-    
-    
-
-
-
-    #atr = calculateATR(dhanObj)
-    #threading.Thread(target=orderforcond1, args=(dhanObj, condition)).start()
-    #threading.Thread(target=orderforcond2, args=(dhanObj,condition)).start()
-    #threading.Thread(target=orderforcond3, args=(dhanObj,condition)).start()
-
-    #dhanObj.startWebsocket()
-    #caculateWIV(dhanObj)
-    #sqaureOff(dhanObj)
+    while utility.getTimeCondition():
+        sleep(1)
+        
+        dhanObj.closeAllPositions()    
     dhanObj.close_connection()
 
 if __name__ == "__main__":
