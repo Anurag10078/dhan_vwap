@@ -293,114 +293,114 @@ def orderforcond2(dhanObj: 'DhanAPICleint', condition: str):
         sleep(1)
         
         
-def orderforcond3(dhanObj: 'DhanAPICleint', condition: str):
-    symdf = config.MASTER_DF
-    strikeGap = config.SYM_MAP[config.SYMBOL][1]
-    spotID = config.SYM_MAP[config.SYMBOL][0]
-    openposition=False
-    while utility.getTimeCondition():
-        try:
-            if condition == 'strong_sell'  and not openposition and condition != 'notrade':
-                    logger.info('Placing strong sell order for CE ')
-                    candledf = dhanObj.get_intraday_candles(security_id=config.SYM_MAP[config.SYMBOL][0],
-                                                        exchange_segment='IDX_I', instrument_type='EQUITY',from_dt = datetime.now(config.TIME_ZONE),timeFrame= config.TIMEFRAME,skipIncomplete=True)
-                    lastcandle = candledf.iloc[-1]
-                    strike=int(lastcandle.close/strikeGap)*strikeGap
-                    ceStrike = strike + config.STRIKE_OFFSET*strikeGap
-                    openposition=True
-                    #sell ce at ce strike
-                    symInfo = symdf[(symdf['STRIKE_PRICE'] == ceStrike) & (symdf['OPTION_TYPE'] == 'CE')].iloc[0]
-                    logger.info(f'Placing strong sell order for CE {symInfo["SYMBOL_NAME"]} at strike {ceStrike}')
-                    #placing order for CE
-                    security_id = symInfo['SECURITY_ID']
-                    qty = config.MULTIPLIER*int(symInfo['LOT_SIZE'])
-                    limitPrice = dhanObj.getLimitPrice(config.EXCNAHGE, security_id,'SELL')
-                    orderid = dhanObj.placeOrder(security_id=str(security_id), transType='SELL', exchange=config.EXCNAHGE, qty=qty, orderType='LIMIT', productType= config.PRODUCT_TYPE, limitPrice=limitPrice, triggerPrice=0)
+# def orderforcond3(dhanObj: 'DhanAPICleint', condition: str):
+#     symdf = config.MASTER_DF
+#     strikeGap = config.SYM_MAP[config.SYMBOL][1]
+#     spotID = config.SYM_MAP[config.SYMBOL][0]
+#     openposition=False
+#     while utility.getTimeCondition():
+#         try:
+#             if condition == 'strong_sell'  and not openposition and condition != 'notrade':
+#                     logger.info('Placing strong sell order for CE ')
+#                     candledf = dhanObj.get_intraday_candles(security_id=config.SYM_MAP[config.SYMBOL][0],
+#                                                         exchange_segment='IDX_I', instrument_type='EQUITY',from_dt = datetime.now(config.TIME_ZONE),timeFrame= config.TIMEFRAME,skipIncomplete=True)
+#                     lastcandle = candledf.iloc[-1]
+#                     strike=int(lastcandle.close/strikeGap)*strikeGap
+#                     ceStrike = strike + config.STRIKE_OFFSET*strikeGap
+#                     openposition=True
+#                     #sell ce at ce strike
+#                     symInfo = symdf[(symdf['STRIKE_PRICE'] == ceStrike) & (symdf['OPTION_TYPE'] == 'CE')].iloc[0]
+#                     logger.info(f'Placing strong sell order for CE {symInfo["SYMBOL_NAME"]} at strike {ceStrike}')
+#                     #placing order for CE
+#                     security_id = symInfo['SECURITY_ID']
+#                     qty = config.MULTIPLIER*int(symInfo['LOT_SIZE'])
+#                     limitPrice = dhanObj.getLimitPrice(config.EXCNAHGE, security_id,'SELL')
+#                     orderid = dhanObj.placeOrder(security_id=str(security_id), transType='SELL', exchange=config.EXCNAHGE, qty=qty, orderType='LIMIT', productType= config.PRODUCT_TYPE, limitPrice=limitPrice, triggerPrice=0)
                     
-                    logger.info(f'Placed strong sell order for CE {symInfo["SYMBOL_NAME"]} with order id {orderid}')
-                    for i in range(10):
-                        orderInfo = dhanObj.getOrderStatus(orderid)
-                        logger.info(f'Order Status {orderInfo}')
-                        if orderInfo['orderStatus'] == 'TRADED':
-                            orderInfo = dhanObj.getOrderByID(orderid)
-                            avgPrice = orderInfo['averageTradedPrice']
-                            sl=avgPrice + (avgPrice*(20/100))
-                            risk = sl - avgPrice
-                            target=avgPrice - risk*config.RR
-                            logger.info(f'Order Executed at price {avgPrice}')
-                            config.POSITION_CONFIG = {'tsym': symInfo['SYMBOL_NAME'], 'security_id': security_id, 'qty': qty, 
-                                                'avgPrice': avgPrice,'SL': sl,'target': target}
-                            logger.info(f'Position Config {config.POSITION_CONFIG}')
-                            break
-                        else:
-                            logger.info(f'Order not executed yet, modify with new limit price')
-                            limitPrice = dhanObj.getLimitPrice(config.EXCNAHGE, security_id,'BUY')
-                                    # modify order with new limit price
-                                    # dhanObj.modifyOrder(orderid=orderid, limitPrice=limitPrice)
-                        sleep(1)
+#                     logger.info(f'Placed strong sell order for CE {symInfo["SYMBOL_NAME"]} with order id {orderid}')
+#                     for i in range(10):
+#                         orderInfo = dhanObj.getOrderStatus(orderid)
+#                         logger.info(f'Order Status {orderInfo}')
+#                         if orderInfo['orderStatus'] == 'TRADED':
+#                             orderInfo = dhanObj.getOrderByID(orderid)
+#                             avgPrice = orderInfo['averageTradedPrice']
+#                             sl=avgPrice + (avgPrice*(20/100))
+#                             risk = sl - avgPrice
+#                             target=avgPrice - risk*config.RR
+#                             logger.info(f'Order Executed at price {avgPrice}')
+#                             config.POSITION_CONFIG = {'tsym': symInfo['SYMBOL_NAME'], 'security_id': security_id, 'qty': qty, 
+#                                                 'avgPrice': avgPrice,'SL': sl,'target': target}
+#                             logger.info(f'Position Config {config.POSITION_CONFIG}')
+#                             break
+#                         else:
+#                             logger.info(f'Order not executed yet, modify with new limit price')
+#                             limitPrice = dhanObj.getLimitPrice(config.EXCNAHGE, security_id,'BUY')
+#                                     # modify order with new limit price
+#                                     # dhanObj.modifyOrder(orderid=orderid, limitPrice=limitPrice)
+#                         sleep(1)
                     
-            if condition == 'strong_buy'  and not openposition and condition != 'notrade':
-                    logger.info('Placing strong sell order for PE i.e. upside view ')
-                    candledf = dhanObj.get_intraday_candles(security_id=config.SYM_MAP[config.SYMBOL][0],
-                                                        exchange_segment='IDX_I', instrument_type='EQUITY',from_dt = datetime.now(config.TIME_ZONE),timeFrame= config.TIMEFRAME,skipIncomplete=True)
-                    lastcandle = candledf.iloc[-1]
-                    strike=int(lastcandle.close/strikeGap)*strikeGap
-                    peStrike = strike - config.STRIKE_OFFSET*strikeGap
-                    openposition=True
-                    #sell pe at pe strike
-                    symInfo = symdf[(symdf['STRIKE_PRICE'] == peStrike) & (symdf['OPTION_TYPE'] == 'PE')].iloc[0]
-                    logger.info(f'Placing strong sell order for PE {symInfo["SYMBOL_NAME"]} at strike {peStrike}')
-                    #placing order for PE
-                    security_id = symInfo['SECURITY_ID']
-                    qty = config.MULTIPLIER*int(symInfo['LOT_SIZE'])
-                    limitPrice = dhanObj.getLimitPrice(config.EXCNAHGE, security_id,'SELL')
-                    orderid = dhanObj.placeOrder(security_id=str(security_id), transType='SELL', exchange=config.EXCNAHGE, qty=qty, orderType='LIMIT', productType= config.PRODUCT_TYPE, limitPrice=limitPrice, triggerPrice=0)
+#             if condition == 'strong_buy'  and not openposition and condition != 'notrade':
+#                     logger.info('Placing strong sell order for PE i.e. upside view ')
+#                     candledf = dhanObj.get_intraday_candles(security_id=config.SYM_MAP[config.SYMBOL][0],
+#                                                         exchange_segment='IDX_I', instrument_type='EQUITY',from_dt = datetime.now(config.TIME_ZONE),timeFrame= config.TIMEFRAME,skipIncomplete=True)
+#                     lastcandle = candledf.iloc[-1]
+#                     strike=int(lastcandle.close/strikeGap)*strikeGap
+#                     peStrike = strike - config.STRIKE_OFFSET*strikeGap
+#                     openposition=True
+#                     #sell pe at pe strike
+#                     symInfo = symdf[(symdf['STRIKE_PRICE'] == peStrike) & (symdf['OPTION_TYPE'] == 'PE')].iloc[0]
+#                     logger.info(f'Placing strong sell order for PE {symInfo["SYMBOL_NAME"]} at strike {peStrike}')
+#                     #placing order for PE
+#                     security_id = symInfo['SECURITY_ID']
+#                     qty = config.MULTIPLIER*int(symInfo['LOT_SIZE'])
+#                     limitPrice = dhanObj.getLimitPrice(config.EXCNAHGE, security_id,'SELL')
+#                     orderid = dhanObj.placeOrder(security_id=str(security_id), transType='SELL', exchange=config.EXCNAHGE, qty=qty, orderType='LIMIT', productType= config.PRODUCT_TYPE, limitPrice=limitPrice, triggerPrice=0)
                     
-                    logger.info(f'Placed sell order for PE {symInfo["SYMBOL_NAME"]} with order id {orderid}')
+#                     logger.info(f'Placed sell order for PE {symInfo["SYMBOL_NAME"]} with order id {orderid}')
                                         
                     
-                    #check order is exexuted or not
-                    for i in range(10):
-                        orderInfo = dhanObj.getOrderStatus(orderid)
-                        logger.info(f'Order Status {orderInfo}')
-                        if orderInfo['orderStatus'] == 'TRADED':
-                            orderInfo = dhanObj.getOrderByID(orderid)
-                            avgPrice = orderInfo['averageTradedPrice']
-                            sl=avgPrice + (avgPrice*(20/100))
-                            risk = sl - avgPrice
-                            target=avgPrice - risk*config.RR
-                            logger.info(f'Order Executed at price {avgPrice}')
-                            config.POSITION_CONFIG = {'tsym': symInfo['SYMBOL_NAME'], 'security_id': security_id, 'qty': qty, 
-                                                'avgPrice': avgPrice,'SL': sl,'target': target}
-                            logger.info(f'Position Config {config.POSITION_CONFIG}')
-                            break
-                        else:
-                            logger.info(f'Order not executed yet, modify with new limit price')
-                            limitPrice = dhanObj.getLimitPrice(config.EXCNAHGE, security_id,'SELL')
-                                    # modify order with new limit price
-                                    # dhanObj.modifyOrder(orderid=orderid, limitPrice=limitPrice)
-                        sleep(1)
-                #tracking the stop loss and target
-            elif openposition:
+#                     #check order is exexuted or not
+#                     for i in range(10):
+#                         orderInfo = dhanObj.getOrderStatus(orderid)
+#                         logger.info(f'Order Status {orderInfo}')
+#                         if orderInfo['orderStatus'] == 'TRADED':
+#                             orderInfo = dhanObj.getOrderByID(orderid)
+#                             avgPrice = orderInfo['averageTradedPrice']
+#                             sl=avgPrice + (avgPrice*(20/100))
+#                             risk = sl - avgPrice
+#                             target=avgPrice - risk*config.RR
+#                             logger.info(f'Order Executed at price {avgPrice}')
+#                             config.POSITION_CONFIG = {'tsym': symInfo['SYMBOL_NAME'], 'security_id': security_id, 'qty': qty, 
+#                                                 'avgPrice': avgPrice,'SL': sl,'target': target}
+#                             logger.info(f'Position Config {config.POSITION_CONFIG}')
+#                             break
+#                         else:
+#                             logger.info(f'Order not executed yet, modify with new limit price')
+#                             limitPrice = dhanObj.getLimitPrice(config.EXCNAHGE, security_id,'SELL')
+#                                     # modify order with new limit price
+#                                     # dhanObj.modifyOrder(orderid=orderid, limitPrice=limitPrice)
+#                         sleep(1)
+#                 #tracking the stop loss and target
+#             elif openposition:
 
-                    logger.info('Checking for SL and target')
+#                     logger.info('Checking for SL and target')
                     
-                    positionConfig = config.POSITION_CONFIG
-                    ltp = dhanObj.getLtp(int(positionConfig['security_id']), exchange='IDX_I')#provided the sec id of the position taken pf ce  
-                    if ltp >= positionConfig['SL']:
-                        logger.info(f'LTP {ltp} hit SL {positionConfig["SL"]}, closing position')
-                        orderid = dhanObj.closePositionBySymQtyTransType(positionConfig['security_id'], positionConfig['qty'])#not giving trans type   as it will determine        
-                        openposition=True #i dont want to take another position for that day if sl hit                
-                    elif ltp <= positionConfig['target']:
-                        logger.info(f'LTP {ltp} hit target {positionConfig["target"]}, closing position')
-                        orderid = dhanObj.closePositionBySymQtyTransType(positionConfig['security_id'], positionConfig['qty'])
-                        openposition=True #i dont want to take another position for that day if target hit 
+#                     positionConfig = config.POSITION_CONFIG
+#                     ltp = dhanObj.getLtp(int(positionConfig['security_id']), exchange='IDX_I')#provided the sec id of the position taken pf ce  
+#                     if ltp >= positionConfig['SL']:
+#                         logger.info(f'LTP {ltp} hit SL {positionConfig["SL"]}, closing position')
+#                         orderid = dhanObj.closePositionBySymQtyTransType(positionConfig['security_id'], positionConfig['qty'])#not giving trans type   as it will determine        
+#                         openposition=True #i dont want to take another position for that day if sl hit                
+#                     elif ltp <= positionConfig['target']:
+#                         logger.info(f'LTP {ltp} hit target {positionConfig["target"]}, closing position')
+#                         orderid = dhanObj.closePositionBySymQtyTransType(positionConfig['security_id'], positionConfig['qty'])
+#                         openposition=True #i dont want to take another position for that day if target hit 
                     
                     
-        except Exception as e:
-            logger.exception('Error in scanning condition 1')
+#         except Exception as e:
+#             logger.exception('Error in scanning condition 1')
             
-        sleep(1)
+#         sleep(1)
 
 
 
