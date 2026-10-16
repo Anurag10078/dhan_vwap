@@ -93,7 +93,7 @@ class DhanAPICleint(metaclass=SingletonMeta):
 
 
     def login(self):
-        accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc1NDkzMjE2LCJpYXQiOjE3NzU0MDY4MTYsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAwMjY1NzE3In0.DlENw3mbrMua6CfofD7aoYnrBL-210BhcY83NCM_LrEqt-NRgLU9ZA0YCD4J3IzxCZ7qVejRCMoCVEJXBGA07w'
+        accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzc3NjA4NzgyLCJpYXQiOjE3Nzc1MjIzODIsInRva2VuQ29uc3VtZXJUeXBlIjoiU0VMRiIsIndlYmhvb2tVcmwiOiIiLCJkaGFuQ2xpZW50SWQiOiIxMTAwMjY1NzE3In0.TYre34DgtNoCys1xK05HnG7fASgdn63tTNw55_Skh7I_66I-3Pi-EMAcSJ1FReU-XPgSZG8qleDEpWSPOdH4KQ'
         self.dhan_context = DhanContext(self.clientId,accessToken)
         self.dhan = dhanhq(self.dhan_context)
     

@@ -35,6 +35,4 @@ SquareOffTime = (15,20,0)
 EXIT_TIME = (23,55,0)
 START_TIME = (17,22,0)
 LAST_ENTRY_TIME = (14,30,0)
-# dhanObj=Dhan
-# CANDLEDF=dhanObj.get_intraday_candles(security_id=SYM_MAP[SYMBOL][0],
-#                                                 exchange_segment='IDX_I', instrument_type='EQUITY',from_dt = datetime.now(TIME_ZONE),timeFrame=TIMEFRAME,skipIncomplete=True)
+                                              
